@@ -5,13 +5,15 @@ Steps to use github lfs for adding large files (limit 2 GB):
 3) git init
 4) git lfs install                           (Cmnt: This initializes git lfs for current work, does not install, just like git init)
 5) git remote add origin (Your repo link)    
-6) git branch -M main                        (Cmnt: Or your branch)
+6) 
 7) git lfs track "*.mdf"                     (Cmnt: Can add more extensions as well, add those you wanna track)
 8) git add .gitattributes                    (Cmnt: After last step, a .gitattributes hidden file was created, stage that for commit, it includes info about all your large files)
 9) git add (file path of large file locally)
 10) git add .                                 (Cmnt: It is possible to skip last step and just do this, to add all files at once)
 11) git commit -m "large file commit"
-12) git push -u origin main
+12) git branch -M main                        (Cmnt: Or your branch)
+13) git remote add origin (your repo)
+14) git push -u origin main
 
 
 
